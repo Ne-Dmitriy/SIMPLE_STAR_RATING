@@ -1,0 +1,92 @@
+@font-face {
+	font-family: raleway_f;
+	src: url(fonts/raleway-regular.woff2);
+} 
+
+body {
+	margin: o auto; 
+	padding: 0px 0px 0px 0px; 
+	background-color: #1F1E22; 
+	color: #EEEEEE;
+	font-family: raleway_f, sans-serif;
+} 
+
+.title {
+	display: flex; 
+	justify-content: center;
+	align-items: center;	
+	margin-top: 270px; 
+	line-height: 1; 
+	letter-spacing: 11px; 
+	font-size: 1.1em; 
+	color: #EEEEEE;
+} 
+
+
+.container {
+	display: flex; 
+	justify-content: center;
+	align-items: center; 
+}
+
+.simple-rating {
+	position: relative;
+	font-size: 4.1em;
+	display: inline-block; 
+	letter-spacing: 11px; 
+} 
+
+.simple-rating::before {
+	content: "★★★★★"; 
+	display: block; 
+}
+
+
+.simple-rating_items {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0; 
+	
+	display: flex;
+	flex-direction: row-reverse;
+	overflow: hidden; 
+}
+
+.simple-rating_item {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden; 
+	top: 0;
+	left: 0; 
+}
+
+.simple-rating_item:checked,
+.simple-rating_item:checked ~ .simple-rating_label {
+	color: #9c6ff4; 
+} 
+
+.simple-rating_label {
+	flex: 0 0 20%; 
+	height: 100%; 
+	cursor: pointer; 
+	color: #FFFFFF;
+	
+}
+
+.simple-rating_label::before {
+	content: "★"; 
+	display: block;  
+	transition: color 0.3s ease 0s; 	
+}
+
+.simple-rating_label:hover,
+.simple-rating_label:hover ~ .simple-rating_label,
+.simple-rating_label:checked ~ .simple-rating_label:hover {
+	color: #9f8ad7; 
+} 
+
+
