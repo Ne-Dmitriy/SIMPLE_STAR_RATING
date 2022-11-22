@@ -1,7 +1,12 @@
+/* Uploading fonts */
+
 @font-face {
 	font-family: raleway_f;
 	src: url(fonts/raleway-regular.woff2);
 } 
+
+
+/* General styles */
 
 body {
 	margin: o auto; 
@@ -22,6 +27,8 @@ body {
 	color: #EEEEEE;
 } 
 
+
+/* Working with star rating mechanics */
 
 .container {
 	display: flex; 
@@ -89,4 +96,4 @@ body {
 	color: #9f8ad7; 
 } 
 
-
+/* I made all this comments just for purple symboll "CSS" near the name of repo, lol */
